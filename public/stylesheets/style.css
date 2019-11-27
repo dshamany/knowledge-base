@@ -1,0 +1,99 @@
+html {
+  background-color: #444;
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  color: white;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #66ccff;
+}
+
+a:active {
+  color: #66ccff;
+}
+
+#logo {
+  display: inline;
+  font-size: 18px;
+  font-weight: bold;
+  border: 3px solid darkgrey;
+  border-radius: 10px;
+  padding: 10px;
+  padding-top: 15px;
+  color: lightgrey;
+}
+
+#logo:hover {
+  color: #66ccff;
+  border-color: #66ccff;
+}
+
+#signin {
+  display: inline;
+  position: absolute;
+  right: 50px;
+  font-size: 18px;
+}
+
+.is-visible {
+  visibility: visible;
+}
+
+.is-invisible {
+  visibility: hidden;
+}
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  width: 80vw;
+}
+
+.body-container {
+  height: 500px;
+  width: 800px;
+  margin: 50px auto;
+}
+
+.body-container > p {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.signUp {
+  margin: 10px;
+}
+
+.oauth-btn {
+  position: fixed;
+  top: 40px;
+  right: 30px;
+  font-size: 14px;
+  border: 2px solid red;
+  color: red;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100px;
+  text-decoration: none;
+}
+
+.oauth-btn:hover {
+  background-color: red;
+  color: white;
+}
+
+.oauth-btn:active {
+  top: 42px;
+  right: 28px;
+}

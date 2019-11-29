@@ -1,11 +1,10 @@
 let express = require('express');
 let router = express.Router();
 
-router.get('/dashboard', (req, res) => {
-    console.log(req.user);
+router.get('/', (req, res) => {
     res.render('dashboard', {
         title: 'Knowledgebase - Dashboard',
-        user: req.user,
+        user: req.user
     }); 
 });
 

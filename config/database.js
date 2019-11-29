@@ -1,6 +1,6 @@
 let mongoose = require('mongoose');
 
-mongoose.connect(process.env.LOCAL_HOST,
+mongoose.connect(process.env.HOST,
     {
         useNewUrlParser: true,
         useCreateIndex: true,

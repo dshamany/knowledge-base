@@ -6,7 +6,11 @@
   </head>
   <header>
     <%- include('./partials/logo.ejs') %>
-    <div id="signin"><a class="oauth-btn" href="/auth/google">Google Sign In</a></div>
+    <% if (user) {%>
+      <div id="signin"><a href="/logout" class="oauth-btn"><%= user.name %></a></div>
+      <% } else { %>
+      <div id="signin"><a href="/auth/google" class="oauth-btn">Google Sign In</a></div>
+      <% } %>
   </header>
   <body>
     <div class="body-container">

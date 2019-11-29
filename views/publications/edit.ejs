@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KnowledgeBase - <%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/fontawesome-free-5.11.2-web/css/all.css'>
+</head>
+
+<body>
+    <div class="body-container">
+        <h1><%= title %></h1>
+        <form class="form-entry" action="/publications/<%= pub._id %>?_method=PUT" method="POST">
+            <label class="id-lbl"><b>ID: </b><%=id %></label>
+            <input type="text" name="title" value="<%= pub.title %>">
+            <input type="text" name="author" value="<%= pub.author %>">
+            <input type="date" name="datePublished" value="<%= new Date(pub.datePublished) %>">
+            <input type="text" name="source" value="<%= pub.source %>">
+            <input type="text" name="notes" value="<%= pub.notes %>">
+            <button type="submit" class="btn new-entry-btn btn-float-left">Save and Exit</button>
+        </form>
+    </div>
+    <%- include('../partials/footer.ejs') %>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KnowledgeBase - <%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/fontawesome-free-5.11.2-web/css/all.css'>
+</head>
+
+<body>
+    <div class="body-container">
+        <h1><%= title %></h1>
+        <form class="form-entry" action="/sleep/<%= user %>" method="POST">
+            <label class="id-lbl"><b>ID: </b><%= night._id%></label>
+            <input type="text" name="date" value="<%= night.date.toDateString()%>">
+            <input type="time" name="start" value="<%= night.start%>">
+            <input type="time" name="end" value="<%= night.end%>">
+            <label class="id-lbl"><b>Duration: </b><%= night.duration%></label>
+            <textarea type="text" name="notes" value="night.notes" placeholder="Notes"></textarea>
+            <button type="submit" class="btn new-entry-btn btn-float-left">Save and Exit</button>
+        </form>
+    </div>
+    <%- include('../partials/footer.ejs') %>

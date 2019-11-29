@@ -15,11 +15,11 @@ a {
 }
 
 a:hover {
-  color: #66ccff;
+  color: red;
 }
 
 a:active {
-  color: #66ccff;
+  color: red;
 }
 
 #logo {
@@ -34,8 +34,8 @@ a:active {
 }
 
 #logo:hover {
-  color: #66ccff;
-  border-color: #66ccff;
+  color: red;
+  border-color: red;
 }
 
 #signin {
@@ -43,14 +43,6 @@ a:active {
   position: absolute;
   right: 50px;
   font-size: 18px;
-}
-
-.is-visible {
-  visibility: visible;
-}
-
-.is-invisible {
-  visibility: hidden;
 }
 
 footer {
@@ -61,9 +53,15 @@ footer {
 }
 
 .body-container {
+  display: flex;
   height: 500px;
   width: 800px;
   margin: 50px auto;
+}
+
+.general-detail-container {
+  margin: 0px auto;
+  margin-top: 50px;
 }
 
 .body-container > p {
@@ -84,8 +82,10 @@ footer {
   color: red;
   border-radius: 5px;
   padding: 10px;
-  width: 100px;
+  width: 120px;
   text-decoration: none;
+  text-align: center;
+  box-shadow: 2px 2px 7px #222;
 }
 
 .oauth-btn:hover {
@@ -94,6 +94,187 @@ footer {
 }
 
 .oauth-btn:active {
-  top: 42px;
-  right: 28px;
+  box-shadow: 1px 1px 5px #222;
+}
+
+.edit-btn {
+  background-color: transparent;
+  color: white;
+}
+.edit-btn:hover {
+  color: red;
+  border-color: red;
+}
+
+.edit-btn:active {
+  background-color: red;
+  color: white;
+}
+
+.flex-container{
+  display: flex;
+  width: 80vw;
+  height: 80vh;
+}
+
+.tracker-selection {
+  width: 200px;
+  height: 150px;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: red;
+  color: white;
+  border: 2px solid lightgray;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px black;
+  margin: 10px;
+}
+
+.tracker-selection:hover{
+  text-decoration: underline;
+}
+
+.tracker-selection:active {
+  box-shadow: 1px 1px 1px black;
+}
+
+.side-list{
+  height: 75vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  width: 50%;
+}
+
+.list-item {
+  height: 15vh;
+  width: 95%;
+  margin-bottom: 5px;
+  padding: 10px;
+  background-color: #777;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+}
+
+.btn {
+  border: 2px solid white;
+  border-radius: 5px;
+  height: 30px;
+  box-shadow: 2px 2px 7px #222;
+}
+
+.btn-float-right{
+  float: right;
+}
+
+.btn-float-left{
+  float: left;
+}
+
+.new-entry-btn {
+  display: block;
+  border: 2px solid darkgreen;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+}
+
+.new-entry-btn:hover {
+  cursor: pointer;
+  color: black;
+}
+
+.new-entry-btn:active {
+  background-color: darkgreen;
+  box-shadow: 1px 1px 3px #222;
+}
+
+.delete-btn {
+  display: block;
+  border: 2px solid darkred;
+  border-radius: 5px;
+  background-color: red;
+  color: black;
+  font-weight: bold;
+}
+
+.delete-btn:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.delete-btn:active {
+  background-color: darkred;
+  box-shadow: 1px 1px 3px #222;
+}
+
+.form-entry {
+  position: relative;
+  width: 50%;
+  height: 500px;
+  top: 50px;
+}
+
+.form-entry input {
+  margin: 10px;
+  width: 300px;
+  height: 40px;
+  background-color: #dadada;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  color: black;
+}
+
+.form-entry textarea {
+  margin: 10px;
+  width: 300px;
+  height: 200px;
+  background-color: #dadada;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  color: black;
+}
+
+.id-lbl {
+  margin: 10px;
+  font-size: 18px;
+  color: lightgrey;
+}
+
+.right-side {
+  float: right;
+}
+
+.left-side {
+  float: left
+}
+
+.fa-edit{
+  float: right;
+  font-size: 18px;
+  width: 30px;
+  padding: 0px;
+  margin-right: 10px;
+}
+
+.fa-edit:hover {
+  background-color: #fff;
+  color: red;
+}
+
+.blue-bg {
+  background-color: #1168da;
+  border-color: #7fa7db;
+}
+
+.red-bg {
+  background-color: darkred;
+  border-color: red;
+
+}
+
+.green-bg {
+  background-color: green;
+  border-color: lightgreen;
 }

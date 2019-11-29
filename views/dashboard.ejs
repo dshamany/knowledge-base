@@ -1,20 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <header>
-    <%- include('./partials/logo.ejs') %>
-      <% if (user) {%>
-        <div id="signin"><a href="/logout" class="oauth-btn"><%= user.name %></a></div>
-        <% } else { %>
-          <div id="signin"><a href="/auth/google" class="oauth-btn">Google Sign In</a></div>
-          <% } %>
-  </header>
-  <body>
-    <div class="body-container">
+
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<header>
+  <%- include('./partials/logo.ejs') %>
+  <% if (user) {%>
+  <div id="signin"><a href="/logout" class="oauth-btn"><%= user.name %></a></div>
+  <% } else { %>
+  <div id="signin"><a href="/auth/google" class="oauth-btn">Google Sign In</a></div>
+  <% } %>
+</header>
+
+<body>
+  <div class="body-container">
+    <div id="flex-container">
       <h1>Dashboard</h1>
-      </body>
+      <% if (user) {%>
+      <a href="/publications/<%= user.id %>">
+        <button type="button" class="tracker-selection red-bg">Publications</button>
+      </a>
+      <a href="/sleep/<%= user.id %>">
+        <button type="button" class="tracker-selection blue-bg">Sleep</button>
+      </a>
+      <% } else { %>
+      No User is Signed In
+      <% } %>
     </div>
-      <%- include('./partials/footer.ejs') %>
+  </div>
+  <%- include('./partials/footer.ejs') %>

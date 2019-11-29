@@ -4,7 +4,7 @@ var passport = require('passport');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'KnowledgeBase' });
+  res.render('index', { title: 'KnowledgeBase', user: req.user });
 });
 
 router.get('/auth/google', passport.authenticate(

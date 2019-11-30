@@ -59,6 +59,10 @@ footer {
   margin: 50px auto;
 }
 
+.body-container > h1 {
+  
+}
+
 .general-detail-container {
   margin: 0px auto;
   margin-top: 50px;
@@ -146,8 +150,8 @@ footer {
 }
 
 .list-item {
-  height: 15vh;
-  width: 95%;
+  height: 13vh;
+  width: 90%;
   margin-bottom: 5px;
   padding: 10px;
   background-color: #777;

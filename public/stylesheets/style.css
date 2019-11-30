@@ -126,7 +126,6 @@ footer {
   height: 150px;
   font-size: 18px;
   font-weight: bold;
-  background-color: red;
   color: white;
   border: 2px solid lightgray;
   border-radius: 10px;
@@ -135,7 +134,7 @@ footer {
 }
 
 .tracker-selection:hover{
-  text-decoration: underline;
+  cursor: pointer;
 }
 
 .tracker-selection:active {
@@ -263,22 +262,37 @@ footer {
 }
 
 .fa-edit:hover {
-  background-color: #fff;
+  background-color:white;
   color: red;
 }
 
 .blue-bg {
-  background-color: #1168da;
-  border-color: #7fa7db;
+  background-color: darkblue;
+  border-color: darkblue;
+}
+
+.blue-bg:hover {
+  background-color: blue;
+  border-color: blue;
 }
 
 .red-bg {
   background-color: darkred;
-  border-color: red;
+  border-color: darkred;
 
 }
 
+.red-bg:hover {
+  background-color: red;
+  border-color: red;
+}
+
+
 .green-bg {
   background-color: green;
+  border-color: green;
+}
+
+.green-bg:hover {
   border-color: lightgreen;
 }

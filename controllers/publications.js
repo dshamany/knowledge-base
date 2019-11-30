@@ -8,12 +8,6 @@ module.exports = {
     delete: deletePublication
 }
 
-// function getDateValueString(date) {
-//     date = date.split(' ');
-//     let [weekday, month, daydate, year] = date;
-//     return 
-// }
-
 function index(req, res) {
     Publication.find({ user: req.params.id }, (err, publications) => {
         res.render('publications/index', {
@@ -44,9 +38,10 @@ function editPublication(req, res) {
 }
 
 function updatePublication(req, res) {
-    Publication.findByIdAndUpdate(req.params.id, req.body, (err, publication) => {
+    Publication.findByIdAndUpdate(req.params.id, req.body, (err, pub) => {
         Publication.find({ user : pub.user }, (err, publications) => {
             res.render('publications/index', {
+                pub,
                 publications,
                 title: 'Publications',
                 id: pub.user,

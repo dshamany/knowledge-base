@@ -10,6 +10,7 @@ module.exports = {
 
 function index(req, res) {
     Publication.find({ user: req.params.id }, (err, publications) => {
+        if (err) { console.log(err); return; }
         res.render('publications/index', {
             publications,
             title: 'Publications',
@@ -29,6 +30,7 @@ function newEntry(req, res) {
 
 function editPublication(req, res) {
     Publication.findById(req.params.id, (err, pub) => {
+        if (err) { console.log(err); return; }
         res.render('publications/edit', {
             pub,
             title: 'Edit',
@@ -39,20 +41,14 @@ function editPublication(req, res) {
 
 function updatePublication(req, res) {
     Publication.findByIdAndUpdate(req.params.id, req.body, (err, pub) => {
-        Publication.find({ user : pub.user }, (err, publications) => {
-            res.render('publications/index', {
-                pub,
-                publications,
-                title: 'Publications',
-                id: pub.user,
-                user: pub.user
-            }); 
-        });
+        if (err) { console.log(err); return; }
+        res.redirect(`/publications/${pub.user}`);
     });
 }
 
 function deletePublication(req, res) {
     Publication.findByIdAndDelete(req.params.id, (err, pub) => {
+        if (err) { console.log(err); return; }
         res.redirect(`/publications/${pub.user}`);
     });
 }

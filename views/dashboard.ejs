@@ -19,11 +19,15 @@
     <div id="flex-container">
       <h1>Dashboard</h1>
       <% if (user) {%>
+        <img>
       <a href="/publications/<%= user.id %>">
         <button type="button" class="tracker-selection red-bg">Publications</button>
       </a>
       <a href="/sleep/<%= user.id %>">
         <button type="button" class="tracker-selection blue-bg">Sleep</button>
+      </a>
+      <a href="/journals/<%= user.id %>">
+        <button type="button" class="tracker-selection green-bg">Journal</button>
       </a>
       <% } else { %>
       No User is Signed In

@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <header>
-    <%- include('./partials/logo.ejs') %>
-    <% if (user) {%>
-      <div id="signin"><a href="/logout" class="oauth-btn"><%= user.name %></a></div>
-      <% } else { %>
-      <div id="signin"><a href="/auth/google" class="oauth-btn">Google Sign In</a></div>
-      <% } %>
-  </header>
-  <body>
-    <div class="body-container">
-        <h1>About KnowledgeBase</h1>
-        <p>
-          This is a tracker that tracks everything. It's open-source nature enables all types of software engineers working with the MERN stack to add features and expand this web app.
-        </p>
-        <p>
-          Furthermore, the tracker is designed to be expandable by the user in the future. Some of the ideas include, building custom trackers, adding analytics, and performing big data fnctions.
-        </p>
+
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+<header>
+  <%- include('./partials/logo.ejs') %>
+  <% if (user) {%>
+  <div id="signin"><a href="/logout" class="oauth-btn"><%= user.name %></a></div>
+  <% } else { %>
+  <div id="signin"><a href="/auth/google" class="oauth-btn">Google Sign In</a></div>
+  <% } %>
+</header>
+
+<body>
+  <div class="body-container">
+    <div class="general-detail-container">
+      <h1>About KnowledgeBase</h1>
+      <p>
+        This is a tracker that tracks everything. It's open-source nature enables all types of software engineers
+        working with the MERN stack to add features and expand this web app.
+      </p>
+      <p>
+        Furthermore, the tracker is designed to be expandable by the user in the future. Some of the ideas include,
+        building custom trackers, adding analytics, and performing big data fnctions.
+      </p>
     </div>
-  </body>
-  <%- include('./partials/footer.ejs') %>
-  
+  </div>
+</body>
+<%- include('./partials/footer.ejs') %>

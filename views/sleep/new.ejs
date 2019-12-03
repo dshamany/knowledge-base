@@ -1,6 +1,10 @@
 <form action="/sleep/<%= user %>" method="POST">
-    <input type="date" name="date" placeholder="Date">
+    <label>Start Time</label>
+    <input type="date" name="start" placeholder="Start Date">
     <input type="time" name="start" placeholder="Start Time">
+    <br>
+    <label>End Time</label>
+    <input type="date" name="end" placeholder="End Date">
     <input type="time" name="end" placeholder="End Time">
     <textarea type="text" name="notes" placeholder="Notes"></textarea>
     <button type="submit" class="new-entry-btn btn">Add New</button>

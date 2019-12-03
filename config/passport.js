@@ -8,6 +8,7 @@ passport.use(new GoogleStrategy({
     callbackURL: process.env.GOOGLE_CALLBACK
 }, (accessToken, refreshToken, profile, cb)=>{
         User.findOne({ 'googleId': profile.id }, (err, user) => {
+            console.log(user);
             if (err) return cb(err);
             if (user) {
                 return cb(null, user);
@@ -31,7 +32,7 @@ passport.serializeUser((user, done) => {
 
 passport.deserializeUser((id, done) => {
     User.findById(id, (err, user) => {
-        console.log(err);
+        if (err) { console.log(err) };
         done(err, user);
     });
 });

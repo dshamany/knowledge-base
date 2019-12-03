@@ -16,6 +16,7 @@ var indexRouter = require('./routes/index');
 var dashboardRouter = require('./routes/dashboard');
 var publicationsRouter = require('./routes/publications');
 var sleepRouter = require('./routes/sleep');
+var journalRouter = require('./routes/journals');
 
 var app = express();
 
@@ -41,6 +42,7 @@ app.use('/', indexRouter);
 app.use('/dashboard', dashboardRouter);
 app.use('/publications', publicationsRouter);
 app.use('/sleep', sleepRouter);
+app.use('/journals', journalRouter);
 
 
 // catch 404 and forward to error handler

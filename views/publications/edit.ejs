@@ -15,11 +15,11 @@
         <h1><%= title %></h1>
         <form class="form-entry" action="/publications/<%= pub._id %>?_method=PUT" method="POST">
             <label class="id-lbl"><b>ID: </b><%=id %></label>
-            <input type="text" name="title" value="<%= pub.title %>">
-            <input type="text" name="author" value="<%= pub.author %>">
-            <input type="text" name="datePublished" value="<%= new Date(pub.datePublished).toDateString() %>">
-            <input type="text" name="source" value="<%= pub.source %>">
-            <input type="text" name="notes" value="<%= pub.notes %>">
+            <input type="text" name="title" value="<%= pub.title %>" placeholder="Title">
+            <input type="text" name="author" value="<%= pub.author %>" placeholder="Author">
+            <input type="text" name="datePublished" value="<%= new Date(pub.datePublished).toDateString() %>" placeholder="Date Published">
+            <input type="text" name="source" value="<%= pub.source %>" placeholder="Source">
+            <input type="text" name="notes" value="<%= pub.notes %>" placeholder="Notes">
             <button type="submit" class="btn new-entry-btn btn-float-left">Save and Exit</button>
         </form>
     </div>

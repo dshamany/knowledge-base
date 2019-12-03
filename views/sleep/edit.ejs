@@ -13,14 +13,21 @@
 <body>
     <div class="body-container">
         <h1><%= title %></h1>
-        <form class="form-entry" action="/sleep/<%= user %>" method="POST">
-            <label class="id-lbl"><b>ID: </b><%= night._id%></label>
-            <input type="text" name="date" value="<%= night.date.toDateString()%>">
-            <input type="time" name="start" value="<%= night.start%>">
-            <input type="time" name="end" value="<%= night.end%>">
-            <label class="id-lbl"><b>Duration: </b><%= night.duration%></label>
-            <textarea type="text" name="notes" value="night.notes" placeholder="Notes"></textarea>
-            <button type="submit" class="btn new-entry-btn btn-float-left">Save and Exit</button>
+        <form class="form-entry" action="/sleep/<%= night.user %>?_method=PUT" method="POST">
+            <input type="text" name="user" value="<%= night.user %>" style="visibility: hidden;"><br>
+            <label>Start Time</label>
+            <input type="text" name="start-date" value="<%= startDate %>"
+             placeholder="Start Date">
+            <input type="text" name="startTime" value="<%= startTime %>" placeholder="Start Time">
+            <br>
+            <label>End Time</label>
+            <input type="text" name="endDate" value="<%= endDate %>" placeholder="End Date">
+            <input type="text" name="endTime" value="<%= endTime %>" placeholder="End Time">
+            <br>
+            <label>Duration:</label>
+            <input type="text" name=duration value="<%= duration %>" placeholder="Duration">
+            <textarea type="text" name="notes" value="<%= night.notes %>" placeholder="Notes"></textarea>
+            <button type="submit" class="new-entry-btn btn">Save and Exit</button>
         </form>
     </div>
     <%- include('../partials/footer.ejs') %>

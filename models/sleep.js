@@ -2,19 +2,17 @@ let mongoose = require('mongoose');
 let Schema = mongoose.Schema;
 
 let sleepSchema = new Schema({
-    date: {
-        type: Date,
-        required: true,
-    },
     start: {
-            type: String,
-            required: true
-        },
-    end: {
-            type: String,
-            required: true
+        type: Date,
+        required: true
     },
-    duration: Number,
+    end: {
+        type: Date,
+        required: true
+    },
+    duration: {
+        type: String
+    },
     Notes: String,
     user: {
         type: Schema.Types.ObjectId,

@@ -24,13 +24,13 @@ function newEntry(req, res) {
         entry.username = req.user.name;
         entry.save((err) => {
             if (err) { console.log(err); return; }
-            res.redirect(`/feed/${req.user._id}`);
+            res.redirect(`/feed`);
         });
 }
 
 function remove(req, res) {
     Feed.findByIdAndDelete(req.params.id, (err) => {
         if (err) { console.log(err); return; }
-        res.redirect(`/feed/${req.user._id}`);
+        res.redirect(`/feed`);
     });
 }

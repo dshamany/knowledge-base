@@ -28,7 +28,7 @@
         <div class="side-list right-side">
             <% for (entry of feed){ %>
             <div class="list-item">
-                <form action="/feed/<%= entry._id %>?_method=DELETE" method="POST">
+                <form action="/feed/<%= entry._id%>?_method=DELETE" method="POST">
                     <button type="submit" class="btn delete-btn btn-float-right">X</button>
                 </form>
                 <p><%= entry.content %></p>

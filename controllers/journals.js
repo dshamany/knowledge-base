@@ -8,12 +8,11 @@ module.exports = {
 }
 
 function index(req, res) {
-    Journal.find({ user: req.params.id }, (err, entries) => {
+    Journal.find({ user: req.user._id }, (err, entries) => {
         if (err) { console.log(err); return; }
         res.render('journals/index', {
             title: 'Journal',
             journal: entries,
-            user: req.user._id
         });
     });
 }
@@ -22,8 +21,7 @@ function view(req, res) {
     Journal.findById(req.params.id, (err, entry) => {
         if (err) { console.log(err); return; }
         res.render('journals/view', {
-            user: req.user,
-            title: `Entry ${entry.createdAt}`,
+            title: `Entry ${entry.createdAt.toLocaleDateString()}`,
             entry
         });
     });
@@ -34,13 +32,13 @@ function create(req, res) {
     entry.user = req.user._id
     entry.save((err, newEntry) => {
         if (err) { console.log(err); return; }
-        res.redirect(`/journals/${req.user._id}`);
+        res.redirect(`/journals`);
     });
 }
 
 function remove(req, res) {
     Journal.findByIdAndDelete(req.params.id, (err, entry) => {
         if (err) { console.log(err); return; }
-        res.redirect(`/journals/${entry.user}`);
+        res.redirect(`/journals`);
     });
 }

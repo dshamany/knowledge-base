@@ -19,23 +19,22 @@ function duration(start, end) {
 }
 
 function index(req, res) {
-    Sleep.find({ user: req.params.id }, (err, sleep) => {
+    Sleep.find({ user: req.user._id }, (err, sleep) => {
         if (err) { console.log(err); return; }
         res.render('sleep/index', {
             sleep,
             title: "Sleep",
-            user: req.params.id,
         }); 
     });
 }
 
 function newSleep (req, res){
     let sleep = new Sleep(req.body);
-    sleep.user = req.params.id;
+    sleep.user = req.user._id;
     sleep.duration = duration(req.body.start, req.body.end);
     sleep.save((err, sleep) => {
         if (err) { console.log(err); return; }
-        res.redirect(`/sleep/${sleep.user}`);
+        res.redirect(`/sleep`);
     });
 }
 
@@ -59,13 +58,13 @@ function update(req, res) {
     req.body.endTime = parseInt(req.body.endTime);
     Sleep.findByIdAndUpdate(req.params.id, req.body, (err, updatedSleep) => {
         if (err) { console.log(err); return; }
-        res.redirect(`/sleep/${req.body.user}`); 
+        res.redirect(`/sleep`); 
     });
 }
 
 function remove(req, res) {
     Sleep.findByIdAndDelete(req.params.id, (err, removedItem) => {
         if (err) { console.log(err); return; }
-        res.redirect(`/sleep/${removedItem.user}`);
+        res.redirect(`/sleep`);
     });
 }

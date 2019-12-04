@@ -2,9 +2,9 @@ let express = require('express');
 let router = express.Router();
 let journalsCtrl = require('../controllers/journals');
 
-router.get('/:id', journalsCtrl.index);
+router.get('/', journalsCtrl.index);
+router.post('/', journalsCtrl.create);
 router.get('/:id/view', journalsCtrl.view);
-router.post('/:id', journalsCtrl.create);
 router.delete('/:id', journalsCtrl.remove);
 
 module.exports = router;

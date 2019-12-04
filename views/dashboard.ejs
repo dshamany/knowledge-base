@@ -20,16 +20,16 @@
       <h1>Dashboard</h1>
       <% if (user) {%>
       <img>
-      <a href="/publications/<%= user.id %>">
+      <a href="/publications">
         <button type="button" class="tracker-selection red-bg">Publications</button>
       </a>
-      <a href="/sleep/<%= user.id %>">
+      <a href="/sleep">
         <button type="button" class="tracker-selection blue-bg">Sleep</button>
       </a>
-      <a href="/journals/<%= user.id %>">
+      <a href="/journals">
         <button type="button" class="tracker-selection green-bg">Journal</button>
       </a>
-      <a href="/feed/<%= user.id %>">
+      <a href="/feed">
         <button type="button" class="tracker-selection green-bg">Feed</button>
       </a>
       <% } else { %>

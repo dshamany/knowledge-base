@@ -14,33 +14,28 @@
         }
     </script>
 </head>
-<header>
-    <%- include('../partials/logo.ejs') %>
-</header>
 
 <body>
+    <header>
+        <%- include('../partials/logo.ejs') %>
+    </header>
     <div class="body-container">
-    <div>
-        <h1><%= title %></h1>
-        <%-include('../partials/backBtn.ejs') %>
+        <div class="form-entry">
+            <h1><%= title %></h1>
+            <%-include('../partials/backBtn.ejs') %>
+            <%- include('./new.ejs') %>
+        </div>
         <div class="side-list right-side">
-            <% for (night of sleep){ %>
+            <% for (entry of feed){ %>
             <div class="list-item">
-                <form action="/sleep/<%= night._id %>?_method=DELETE" method="POST">
+                <form action="/feed/<%= entry._id %>?_method=DELETE" method="POST">
                     <button type="submit" class="btn delete-btn btn-float-right">X</button>
                 </form>
-                <a href="/sleep/<%= night._id %>/edit">
-                    <button class="btn fa fa-edit">
-                    </button>
-                </a>
-                <h4><%= new Date(night.start).toLocaleDateString()%></h4>
-                <p><b>Duration: </b><%= new Date(night.start - night.end).toTimeString().split(' ')[0]; %></p>
+                <p><%= entry.content %></p>
+                <i><%= entry.createdAt.toLocaleDateString() %></i>
+                <i><%= user.name %></i>
             </div>
             <% } %>
         </div>
-        <div class="form-entry">
-            <%- include('./new.ejs') %>
-        </div>
-    </div>
     </div>
     <%- include('../partials/footer.ejs') %>

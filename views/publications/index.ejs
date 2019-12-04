@@ -22,7 +22,7 @@
     <div class="body-container">
         <div>
             <h1><%= title %></h1>
-            <%-include('../partials/backBtn.ejs') %>
+            <%-include('../partials/backBtn') %>
             <div class="side-list right-side">
                 <% for (pub of publications){ %>
                 <div class="list-item">
@@ -39,9 +39,9 @@
                 </div>
                 <% } %>
             </div>
-            <div class="form-entry left-side">
-                <%- include('./new.ejs') %>
+            <div class="form-entry">
+                <%- include('new') %>
             </div>
         </div>
     </div>
-    <%- include('../partials/footer.ejs') %>
+    <%- include('../partials/footer') %>

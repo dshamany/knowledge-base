@@ -19,7 +19,7 @@
     <div id="flex-container">
       <h1>Dashboard</h1>
       <% if (user) {%>
-        <img>
+      <img>
       <a href="/publications/<%= user.id %>">
         <button type="button" class="tracker-selection red-bg">Publications</button>
       </a>
@@ -29,9 +29,12 @@
       <a href="/journals/<%= user.id %>">
         <button type="button" class="tracker-selection green-bg">Journal</button>
       </a>
+      <a href="/feed/<%= user.id %>">
+        <button type="button" class="tracker-selection green-bg">Feed</button>
+      </a>
       <% } else { %>
       No User is Signed In
       <% } %>
-    </div>
+      </div>
   </div>
   <%- include('./partials/footer.ejs') %>

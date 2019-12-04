@@ -13,7 +13,7 @@ function index(req, res) {
         res.render('journals/index', {
             title: 'Journal',
             journal: entries,
-            user: req.params.id
+            user: req.user._id
         });
     });
 }
@@ -22,7 +22,7 @@ function view(req, res) {
     Journal.findById(req.params.id, (err, entry) => {
         if (err) { console.log(err); return; }
         res.render('journals/view', {
-            user: entry.user,
+            user: req.user,
             title: `Entry ${entry.createdAt}`,
             entry
         });
@@ -31,10 +31,10 @@ function view(req, res) {
 
 function create(req, res) {
     let entry = new Journal(req.body);
-    entry.user = req.params.id;
+    entry.user = req.user._id
     entry.save((err, newEntry) => {
         if (err) { console.log(err); return; }
-        res.redirect(`/journals/${newEntry.user}`);
+        res.redirect(`/journals/${req.user._id}`);
     });
 }
 

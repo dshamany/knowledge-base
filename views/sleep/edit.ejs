@@ -16,7 +16,7 @@
         <form class="form-entry" action="/sleep/<%= night._id %>?_method=PUT" method="POST">
             <input type="text" name="user" value="<%= night.user %>" style="visibility: hidden;"><br>
             <label>Start Time</label>
-            <input type="date" name="start-date" value="01/21/2019"
+            <input type="date" name="start-date" value="<% new Date('01/21/2019') %>"
              placeholder="Start Date">
             <input type="time" name="startTime" value="<%= startTime %>" placeholder="Start Time">
             <br>

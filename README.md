@@ -36,3 +36,5 @@ All entries reference the user that entered them. This way, if entries need to b
 - HTML
 - CSS 
 - JavaScript
+
+![technology Stack Used](https://imgur.com/AWvt1Jv)

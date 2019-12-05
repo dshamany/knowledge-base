@@ -25,3 +25,8 @@ All entries reference the user that entered them. This way, if entries need to b
 ## Where to find the App
 
 [KnowledgeBase on heroku](https://ds-knowledge-base.herokuapp.com)
+
+
+## Technologies Used
+
+[MERN Stack](https://imgur.com/jlWGVkV);

@@ -34,7 +34,7 @@
                     </button>
                 </a>
                 <h4><%= new Date(night.start).toLocaleDateString()%></h4>
-                <p><b>Duration: </b><%= new Date(night.start - night.end).toTimeString().split(' ')[0]; %></p>
+                <p><b>Duration: </b><%= new Date(night.end - night.start).toTimeString().split(' ')[0]; %></p>
             </div>
             <% } %>
         </div>

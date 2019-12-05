@@ -136,8 +136,8 @@ footer {
   width: 97%;
   margin-bottom: 5px;
   padding: 10px;
-  background-color: #777;
-  border: 1px solid darkgray;
+  background-color: #222;
+  border: 1px solid #555;
   border-radius: 5px;
 }
 

@@ -26,6 +26,7 @@ All entries reference the user that entered them. This way, if entries need to b
 
 [KnowledgeBase on heroku](https://ds-knowledge-base.herokuapp.com)
 
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fapi.slack.com%2Fimg%2Fapi%2Fhosting_heroku.png&f=1&nofb=1" width="50px">
 
 ## Technologies Used
 

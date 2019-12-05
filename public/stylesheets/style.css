@@ -10,16 +10,16 @@ body {
 }
 
 a {
-  color: white;
+  color: gray;
   text-decoration: none;
 }
 
 a:hover {
-  color: red;
+  color: white;
 }
 
 a:active {
-  color: red;
+  color: white;
 }
 
 #logo {
@@ -192,7 +192,7 @@ footer {
   display: block;
   border: 2px solid darkred;
   border-radius: 5px;
-  background-color: red;
+  background-color: darkred;
   color: black;
   font-weight: bold;
 }
@@ -261,7 +261,7 @@ footer {
 
 .fa-edit:hover {
   background-color:white;
-  color: red;
+  color: darkred;
 }
 
 .gray-bg {

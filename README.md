@@ -29,4 +29,4 @@ All entries reference the user that entered them. This way, if entries need to b
 
 ## Technologies Used
 
-[MERN Stack]: https://imgur.com/jlWGVkV "MERN Stack Image"
+![MERN Stack](https://imgur.com/jlWGVkV "MERN Stack Image")

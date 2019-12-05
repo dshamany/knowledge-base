@@ -97,20 +97,6 @@ footer {
   box-shadow: 1px 1px 5px #222;
 }
 
-.edit-btn {
-  background-color: transparent;
-  color: white;
-}
-.edit-btn:hover {
-  color: red;
-  border-color: red;
-}
-
-.edit-btn:active {
-  background-color: red;
-  color: white;
-}
-
 .flex-container{
   display: flex;
   width: 100vw;

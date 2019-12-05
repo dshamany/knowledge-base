@@ -264,6 +264,18 @@ footer {
   color: red;
 }
 
+.gray-bg {
+  background-color: gray;
+  border-color: gray;
+  color: white;
+}
+
+.gray-bg:hover {
+  background-color: lightgray;
+  border-color: lightgray;
+  color: black;
+}
+
 .blue-bg {
   background-color: darkblue;
   border-color: darkblue;

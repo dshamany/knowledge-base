@@ -37,4 +37,4 @@ All entries reference the user that entered them. This way, if entries need to b
 - CSS 
 - JavaScript
 
-![Technology Stack Used](https://imgur.com/download/AWvt1Jv)
+<img src="https://imgur.com/download/AWvt1Jv" width="200px">

@@ -39,3 +39,13 @@ All entries reference the user that entered them. This way, if entries need to b
 - JavaScript
 
 <img src="https://imgur.com/download/AWvt1Jv" width="200px">
+
+## Screenshots
+
+<img src="./public/screen1" width="100px">
+<img src="./public/screen2" width="100px">
+<img src="./public/screen3" width="100px">
+<img src="./public/screen4" width="100px">
+<img src="./public/screen5" width="100px">
+<img src="./public/screen6" width="100px">
+<img src="./public/screen7" width="100px">

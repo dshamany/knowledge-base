@@ -42,10 +42,10 @@ All entries reference the user that entered them. This way, if entries need to b
 
 ## Screenshots
 
-<img src="./public/screen1" width="100px">
-<img src="./public/screen2" width="100px">
-<img src="./public/screen3" width="100px">
-<img src="./public/screen4" width="100px">
-<img src="./public/screen5" width="100px">
-<img src="./public/screen6" width="100px">
-<img src="./public/screen7" width="100px">
+<img src="https://github.com/dshamany/knowledge-base/blob/master/public/images/screen1.png" width="100px">
+<img src="https://github.com/dshamany/knowledge-base/blob/master/public/images/screen2.png" width="100px">
+<img src="https://github.com/dshamany/knowledge-base/blob/master/public/images/screen3.png" width="100px">
+<img src="https://github.com/dshamany/knowledge-base/blob/master/public/images/screen4.png" width="100px">
+<img src="https://github.com/dshamany/knowledge-base/blob/master/public/images/screen5.png" width="100px">
+<img src="https://github.com/dshamany/knowledge-base/blob/master/public/images/screen6.png" width="100px">
+<img src="https://github.com/dshamany/knowledge-base/blob/master/public/images/screen7.png" width="100px">

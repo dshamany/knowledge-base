@@ -1,5 +1,6 @@
 html {
   background-image: linear-gradient(to bottom right, #000, #444);
+  background-size: cover;
 }
 
 body {

@@ -1,5 +1,7 @@
 html {
-  background-image: linear-gradient(to bottom right, #000, #444) no-repeat center center fixed;
+  background-image: linear-gradient(to bottom right, #000, #444) no-repeat;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: 100%;
 }
 

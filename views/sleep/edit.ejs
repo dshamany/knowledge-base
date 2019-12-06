@@ -25,7 +25,7 @@
             <input type="text" name="endTime" value="<%= endTime %>" placeholder="End Time">
             <br>
             <label>Duration:</label>
-            <input type="text" name=duration value="<%= duration %>" placeholder="Duration">
+            <input type="text" name=duration value="<%= new Date(night.end - night.start).toTimeString().split(' ')[0]; %>" placeholder="Duration">
             <textarea type="text" name="notes" value="<%= night.notes %>" placeholder="Notes"></textarea>
             <button type="submit" class="new-entry-btn btn">Save and Exit</button>
         </form>

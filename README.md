@@ -1,4 +1,4 @@
-# knowledge-base
+# KnowledgeBase
 
 This is an application to track different aspects of your life. I intend on it to be open source and taken a bit seriously, as the tools I've currently developed are used by me in a spreadsheet form. This should enable better tracking. 
 

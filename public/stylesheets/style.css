@@ -1,6 +1,6 @@
 html {
-  background-image: linear-gradient(to bottom right, #000, #444);
-  background-size: cover;
+  background-image: linear-gradient(to bottom right, #000, #444) no-repeat center center fixed;
+  background-size: 100%;
 }
 
 body {

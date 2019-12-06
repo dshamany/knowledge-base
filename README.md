@@ -42,10 +42,10 @@ All entries reference the user that entered them. This way, if entries need to b
 
 ## Screenshots
 
-<img src="https://github.com/dshamany/knowledge-base/blob/master/public/images/screen1.png" width="100px">
-<img src="https://github.com/dshamany/knowledge-base/blob/master/public/images/screen2.png" width="100px">
-<img src="https://github.com/dshamany/knowledge-base/blob/master/public/images/screen3.png" width="100px">
-<img src="https://github.com/dshamany/knowledge-base/blob/master/public/images/screen4.png" width="100px">
-<img src="https://github.com/dshamany/knowledge-base/blob/master/public/images/screen5.png" width="100px">
-<img src="https://github.com/dshamany/knowledge-base/blob/master/public/images/screen6.png" width="100px">
-<img src="https://github.com/dshamany/knowledge-base/blob/master/public/images/screen7.png" width="100px">
+<img src="https://github.com/dshamany/knowledge-base/blob/master/public/images/screen1.png" width="300px">
+<img src="https://github.com/dshamany/knowledge-base/blob/master/public/images/screen2.png" width="300px">
+<img src="https://github.com/dshamany/knowledge-base/blob/master/public/images/screen3.png" width="300px">
+<img src="https://github.com/dshamany/knowledge-base/blob/master/public/images/screen4.png" width="300px">
+<img src="https://github.com/dshamany/knowledge-base/blob/master/public/images/screen5.png" width="300px">
+<img src="https://github.com/dshamany/knowledge-base/blob/master/public/images/screen6.png" width="300px">
+<img src="https://github.com/dshamany/knowledge-base/blob/master/public/images/screen7.png" width="300px">

@@ -9,8 +9,8 @@
   <%- include('./partials/logo.ejs') %>
   <% if (user) {%>
   <div id="signin"><a href="/logout" class="oauth-btn"><%= user.name %></a></div>
-  <% } else { %>
   <div><a href="/dasboard">Dashboard</a></div>
+  <% } else { %>
   <div id="signin"><a href="/auth/google" class="oauth-btn">Google Sign In</a></div>
   <% } %>
 </header>

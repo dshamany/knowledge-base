@@ -1,11 +1,8 @@
 html {
-  background-image: linear-gradient(to bottom right, #000, #444);
-  background-size: cover;
+  background-color: #444;
 }
 
 body {
-  background-image: linear-gradient(to bottom right, #000, #444);
-  background-size: cover;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   margin: 0;

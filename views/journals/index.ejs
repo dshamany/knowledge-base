@@ -29,7 +29,7 @@
             <% for (entry of journal){ %>
             <div class="list-item">
                 <form action="/journals/<%= entry._id %>?_method=DELETE" method="POST">
-                    <button type="submit" class="btn delete-btn btn-float-right">X</button>
+                    <button type="submit" class="btn delete-btn btn-float-right"><i class="fas fa-trash-alt"></i></button>
                 </form>
                 <a href="/journals/<%= entry._id%>/view">
                 <p><%= entry.createdAt %></

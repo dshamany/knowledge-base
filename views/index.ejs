@@ -8,7 +8,8 @@
 <header>
   <%- include('./partials/logo.ejs') %>
   <% if (user) {%>
-  <div id="signin"><a href="/logout" class="oauth-btn"><%= user.name %></a></div>
+  <div id="signin"><a href="/logout" class="oauth-btn">Sign Out</a></div>
+  <div id="signin" style="right:200px;"><a href="/dashboard">Dashboard</a></div>
   <% } else { %>
   <div id="signin"><a href="/auth/google" class="oauth-btn">Google Sign In</a></div>
   <% } %>
@@ -26,9 +27,6 @@
         Furthermore, the tracker is designed to be expandable by the user in the future. Some of the ideas include,
         building custom trackers, adding analytics, and performing big data fnctions.
       </p>
-      <% if (user) { %>
-      <p style="color: darkred;">Go back to <a href="/dashboard">Dashboard</a></p>
-      <% } %>
     </div>
   </div>
 </body>

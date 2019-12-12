@@ -29,7 +29,7 @@
             <% for (mood of moods){ %>
             <div class="list-item">
                 <form action="/moods/<%= mood._id %>?_method=DELETE" method="POST">
-                    <button type="submit" class="btn delete-btn btn-float-right">X</button>
+                    <button type="submit" class="btn delete-btn btn-float-right"><i class="fas fa-trash-alt"></i></button>
                 </form>
                 <h4><%=mood.mood%></h4>
                 <p><%=mood.createdAt.toLocaleDateString()%>-

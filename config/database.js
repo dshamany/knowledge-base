@@ -14,4 +14,4 @@ db.on('connected', () => {
     console.log(`MongoDB on ${db.host}:${db.port}`);
 });
 
-// module.exports = mongoose;
+module.exports = mongoose;

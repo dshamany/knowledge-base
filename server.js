@@ -18,6 +18,7 @@ var publicationsRouter = require('./routes/publications');
 var sleepRouter = require('./routes/sleep');
 var journalRouter = require('./routes/journals');
 var feedRouter = require('./routes/feed');
+var moodRouter = require('./routes/moods');
 
 var app = express();
 
@@ -45,6 +46,7 @@ app.use('/publications', publicationsRouter);
 app.use('/sleep', sleepRouter);
 app.use('/journals', journalRouter);
 app.use('/feed', feedRouter);
+app.use('/moods', moodRouter);
 
 
 // catch 404 and forward to error handler

@@ -8,12 +8,6 @@ module.exports = {
     delete: remove
 }
 
-function dateTimeValues(date) {
-    let dateString = date.toLocaleDateString();
-    let timeString = date.toLocaleTimeString();
-    return [dateString, timeString];
-}
-
 function duration(start, end) {
     return new Date(start - end).toTimeString().split(' ')[0];
 }

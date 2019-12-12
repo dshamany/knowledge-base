@@ -231,6 +231,15 @@ footer {
   color: black;
 }
 
+.form-entry select {
+  margin: 10px;
+  height: 40px;
+}
+
+.form-entry button {
+  margin: 10px;
+}
+
 .id-lbl {
   margin: 10px;
   font-size: 18px;

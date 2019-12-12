@@ -1,15 +1,6 @@
-<form action="/moods" method="POST">
-    <select name="moods">
-        <option>Happy</option>
-        <option>Hungry</option>
-        <option>Sad</option>
-        <option>Lonely</option>
-        <option>Excited</option>
-        <option>Irritated</option>
-        <option>Playful</option>
-        <option>Compassionate</option>
-        <option>Loving</option>
-        <option>Angry</option>
-    </select>
+<form class="form-entry" action="/moods" method="POST">
+    <%- include('moodsList.ejs') %>
     <input type="text" name="location" placeholder="Location">
+    <textarea name="notes" placeholder="notes"></textarea>
+    <button class="btn new-entry-btn">Add</button>
 </form>

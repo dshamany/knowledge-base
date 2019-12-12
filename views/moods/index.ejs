@@ -20,19 +20,23 @@
 
 <body>
     <div class="body-container">
-    <div>
-        <h1><%= title %></h1>
-        <%-include('../partials/backBtn.ejs') %>
+        <div class="form-entry">
+            <h1><%= title %></h1>
+            <%-include('../partials/backBtn.ejs') %>
+            <%- include('./new.ejs') %>
+        </div>
         <div class="side-list right-side">
-            <% for (mood of mood){ %>
+            <% for (mood of moods){ %>
             <div class="list-item">
-               
+                <form action="/moods/<%= mood._id %>?_method=DELETE" method="POST">
+                    <button type="submit" class="btn delete-btn btn-float-right">X</button>
+                </form>
+                <h4><%=mood.mood%></h4>
+                <p><%=mood.createdAt.toLocaleDateString()%>-
+                    <%=mood.createdAt.toLocaleTimeString()%>
+                </p>
             </div>
             <% } %>
         </div>
-        <div class="form-entry">
-            <%- include('./new.ejs') %>
-        </div>
     </div>
-    </div>
-    <%- include('../partials/footer.ejs') %>
+    <%- include('../partials/footer') %>

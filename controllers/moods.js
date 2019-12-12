@@ -9,7 +9,8 @@ function index(req, res) {
         if (err) { console.log(err); return; }
         res.render('index', {
             title: 'Moods',
-            moods
+            moods,
+            user: req.user
         });
     });
 }
